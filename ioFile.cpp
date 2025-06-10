@@ -6,4 +6,5 @@ using namespace std;
 int main(){
     string baris;
     // Membuka File dalam mode menulis.
-   
+    ofstream outfile;
+    //Menunjuk Kearah suatu file
