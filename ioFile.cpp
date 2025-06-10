@@ -11,4 +11,8 @@ int main(){
     outfile.open("Contohfile.txt");
     cout << ">= Menulis File, \'q\' untuk keluar" << endl;
     //Unlimited Loop Untuk Menulis
-   
+    while(true){
+        cout <<" ' ";
+        //Mendapatkan Setiap Karakter dalam satu baris
+        getline(cin, baris);
+       
