@@ -25,4 +25,21 @@ int main(){
     }
     //Selesai dan sekarang tutup filenya
     outfile.close();
+    //memulai file dalam mode membaca
+    ifstream infile;
+    //Mennunjuk FILE
+    infile.open(namafile, ios::in);
+     cout << endl << ">= Membuka dan Membaca File " << endl;
+    if (infile.is_open()){
+        //Melakukan perulangan setiap baris 
+        while(getline(infile,baris)){
+            //dan tampilkan disini
+            cout << baris << '\n';
+        }
+        //tutup file tersebut setelah selesai
+        infile.close();
+    }
+      //Jika tidak ditemukan file maka akan menampilkan ini
+    else cout << "Unable to open file";
+    return 0;
 }
