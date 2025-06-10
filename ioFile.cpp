@@ -35,4 +35,8 @@ int main(){
             cout << baris << '\n';
         }
         //tutup file tersebut setelah selesai
-   
+    }
+    //Jika tidak ditemukan file maka akan menampilkan ini
+    else cout << "Unable to open file";
+    return 0;
+}
