@@ -33,4 +33,6 @@ int main(){
         while(getline(infile,baris)){
             //dan tampilkan disini
             cout << baris << '\n';
-       
+        }
+        //tutup file tersebut setelah selesai
+   
